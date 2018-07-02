@@ -1,7 +1,3 @@
-require_relative './concerns/memorable.rb'
-require_relative './concerns/findable.rb'
-require_relative './concerns/paramable.rb'
-require 'pry'
 
 class Artist
   attr_accessor :name
@@ -17,10 +13,7 @@ class Artist
   #  @@artists.detect{|a| a.name == name}
  # end
 
-  #def initialize
-  #  @@artists << self
-  #  @songs = []
-  #end
+
   def initialize
     super
     @songs = []
